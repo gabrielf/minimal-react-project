@@ -16,19 +16,15 @@
   },
   "devDependencies": {
     "babel-preset-react": "^6.0.14",
-    "babelify": "^7.0.2",
+    "babelify": "^7.1.0",
     "browserify": "^12.0.1",
     "standard": "^5.3.1",
     "watchify": "^3.6.0"
   },
   "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": ["react"]
-        }
-      ]
-    ]
+    "transform": ["babelify"]
+  },
+  "babel": {
+    "presets": ["react"]
   }
 }
