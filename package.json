@@ -1,0 +1,24 @@
+{
+  "name": "minimal react project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t [ babelify --presets react ] main.js -o bundle.js",
+    "watch": "watchify -t [ babelify --presets react ] main.js -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.0.14",
+    "babelify": "^7.0.2",
+    "browserify": "^12.0.1",
+    "standard": "^5.3.1",
+    "watchify": "^3.6.0"
+  }
+}
